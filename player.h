@@ -4,8 +4,8 @@
 
 namespace ply{
     class Player{
-        VirtualCard *card1;
-        VirtualCard *card2; 
+        Card *card1;
+        Card *card2; 
 
     };
 };

@@ -1,33 +1,31 @@
-namespace crd{
 
-    class Card{
-        public:
-            const int value;
-            Card(int value);
-            
-    };
 
-    class Clubs{
-        public:
-            Clubs(int value);
+class Card{
+    public:
+        int value;
+        
+        Card(int val);
+};
 
-    };
-    
-    class Diamonds {
-        public:
-            Diamonds(int value);
-
-    };
-
-    class Spades{
-        public:
-            Spades(int value);
-    };
-
-    class Hearts{
-        public:
-            Hearts(int value);
-    };
-
+class Clubs : public Card{
+    public:
+        Clubs(int val);
 
 };
+
+class Diamonds : public Card{
+    public:
+        Diamonds(int val);
+
+};
+
+class Spades : public Card{
+    public:
+        Spades(int val);
+};
+
+class Hearts : public Card{
+    public:
+        Hearts(int val);
+};
+

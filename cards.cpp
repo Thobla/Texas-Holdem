@@ -1,37 +1,17 @@
 #include "card.h"
+#include <iostream>
+#include <string>
 
-class Card : public crd::Card{
-    public:
-        const int value;
-        Card(int val){
-            value = val;
+Card::Card(int val) {
+    value = val;
+}
 
-        };
-};
+Clubs::Clubs(int val) : Card(val) {}
 
-class Clubs : public Card{
-    public:
-        Clubs(int val) : Card::Card(val) {};
+Diamonds::Diamonds(int val) : Card(val) {}
 
-    
-};
+Spades::Spades(int val) : Card(val) {}
 
+Hearts::Hearts(int val) : Card(val) {}
 
-class Hearts : public Card{ 
-
-    public:
-        Hearts(int val) : Card::Card(val) {};
-};
-class Spades : public Card{ 
-
-    public:
-        Spades(int val) : Card::Card(val) {};
-
-}; 
-class Diamonds : public Card{ 
-
-    public:
-        Diamonds(int val) : Card::Card(val) {};
-
-};
 
