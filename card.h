@@ -1,4 +1,5 @@
-
+#ifndef CARD_H
+#define CARD_H
 
 class Card{
     public:
@@ -28,4 +29,4 @@ class Hearts : public Card{
     public:
         Hearts(int val);
 };
-
+#endif

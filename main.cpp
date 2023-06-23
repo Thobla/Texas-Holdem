@@ -1,4 +1,5 @@
-
+#include "Deck.h"
+#include "player.h"
 #include "card.h"
 #include <iostream>
 
@@ -8,6 +9,10 @@ int main()
     Card card2(3);
     Clubs card3(4);
 
-    std::cout << card1.value << " " << card2.value << " " << card3.value;
+    std::cout << card1.value << " " << card2.value << " " << card3.value << std::endl;
+
+    Deck *myDeck = new Deck();
+
+    std::cout << myDeck->deck[51]->value << std::endl;
 
 }
