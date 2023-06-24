@@ -1,5 +1,5 @@
 #include "Deck.h"
-#include "card.h"
+#include "Card.h"
 #include <vector>
 
 

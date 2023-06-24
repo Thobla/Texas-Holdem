@@ -1,6 +1,6 @@
 #include "Deck.h"
-#include "player.h"
-#include "card.h"
+#include "Player.h"
+#include "Card.h"
 #include <iostream>
 
 int main()
