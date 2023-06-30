@@ -1,7 +1,7 @@
 #include "Deck.h"
 #include "Cards.h"
 #include <vector>
-
+#include <iostream>
 
 Deck::Deck(){
 	int x = 0;
@@ -15,6 +15,16 @@ Deck::Deck(){
 		Deck::deck[x] = new Spades(i);
 		x++;
 	};
+
+};
+
+Deck::~Deck(){
+  for (auto x : Deck::deck){
+    delete x;
+
+
+  };
+
 
 };
 

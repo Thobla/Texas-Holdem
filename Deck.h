@@ -9,7 +9,8 @@ class Deck {
 		
 		Deck();
 
-	
+
+		~Deck();
 
 
 

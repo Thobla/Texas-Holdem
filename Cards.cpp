@@ -6,6 +6,9 @@ Card::Card(int val) {
     value = val;
 }
 
+Card::~Card(){
+}
+
 Clubs::Clubs(int val) : Card(val) {}
 
 Diamonds::Diamonds(int val) : Card(val) {}

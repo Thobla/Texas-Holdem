@@ -6,6 +6,7 @@ class Card{
         int value;
         
         Card(int val);
+	~Card();
 };
 
 class Clubs : public Card{

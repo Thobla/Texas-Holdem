@@ -7,12 +7,9 @@
 class Player{
 	public:
 		std::string name;
-		int sjettonger;
-		//Card *card1;	
-		//Card *card2; 
-		//std::tuple hand; 
+		int sjettonger; 
+		Card *hand[2]; 
 		Player(std::string name, int sjettonger);
-
 
 
 };
