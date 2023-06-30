@@ -23,14 +23,20 @@ int main()
     std::cout << myDeck.deck[51]->value << "\n";
 
     std::shuffle(std::begin(myDeck.deck), std::end(myDeck.deck), std::mt19937{std::random_device{}()});
-
     
-    p1.hand[0] = myDeck.deck[51];
-    p1.hand[1] = myDeck.deck[50];
-    p2.hand[0] = myDeck.deck[49];
-    p2.hand[1] = myDeck.deck[48];
+    p1.card1 = &myDeck.deck[51];
+    p1.card2 = &myDeck.deck[50];
+    p2.card1 = &myDeck.deck[49];
+    p2.card2 = &myDeck.deck[48];
 
     std::cout << myDeck.deck[51]->value << "\n";
-    std::cout << p1.hand[0]->value << p1.hand[1]->value << p2.hand[0]->value << p2.hand[1]->value << "\n";
+    std::cout << (*p1.card1)->value << "\n";
+    std::cout << myDeck.deck[51] << "\n";
+
+    std::shuffle(std::begin(myDeck.deck), std::end(myDeck.deck), std::mt19937{std::random_device{}()});
+    std::cout << myDeck.deck[51]->value << "\n";
+    std::cout << (*p1.card1)->value << "\n";
+    std::cout << myDeck.deck[51] << "\n";
+
 
 }
