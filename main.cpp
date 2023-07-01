@@ -1,6 +1,7 @@
 #include "Deck.h"
 #include "Player.h"
 #include "Cards.h"
+#include "Table.h"
 #include <iostream>
 #include <algorithm>
 #include <iterator>
@@ -8,15 +9,16 @@
 
 int main()
 {
-    Hearts card1(2);
-    Card card2(3);
-    Clubs card3(4);
 
-    //std::cout << card1.value << " " << card2.value << " " << card3.value << "\n";
 
     //Deck *myDeck = new Deck(); //using new keyword, it is allocated in heap and must use delete keyword later
     Deck myDeck; //created in the stac, but might sink over to other variables if too big data.
     //shuffle the deck, first input takes a pointer to the start of the deck, second takes pointer to the end, third is generator
+
+
+    Table table(myDeck);
+
+
     Player p1("Player 1", 100, myDeck);
     Player p2("Player 2", 200, myDeck);
     
@@ -32,4 +34,10 @@ int main()
     std::cout << "deck[0]: " << myDeck.deck[0]->value << "\n";
     std::cout << "p1, card1->value: " <<(*p1.card1)->value << "\n";
     std::cout << "p1, card2->value: " <<(*p1.card2)->value << "\n";
+
+
+    std::cout << "table card-values: " << (*table.card1)->value << (*table.card2)->value << (*table.card3)->value
+<< (*table.card4)->value << (*table.card5)->value << "\n";
+
+    std::cout << "deck card 0,1,2,3,4 and 5 - values " << myDeck.deck[0] -> value <<myDeck.deck[1]-> value <<myDeck.deck[2]-> value <<myDeck.deck[3] -> value <<myDeck.deck[4]-> value << "\n";
 }
