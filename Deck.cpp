@@ -3,19 +3,28 @@
 #include <vector>
 #include <iostream>
 
+
+int assignedCards = 0;
+Card *deck[52];
 Deck::Deck(){
 	int x = 0;
 	for(int i = 2; i <= 14; i++){
-		Deck::deck[x] = new Hearts(i);
+		deck[x] = new Hearts(i);
 		x++;	
-		Deck::deck[x] = new Diamonds(i);
+		deck[x] = new Diamonds(i);
 		x++;
-		Deck::deck[x] = new Clubs(i);
+		deck[x] = new Clubs(i);
 		x++;
-		Deck::deck[x] = new Spades(i);
+		deck[x] = new Spades(i);
 		x++;
 	};
 
+
+};
+Card** Deck::assignCard(){
+	Card** ptr = &deck[assignedCards];
+	assignedCards += 1;
+	return ptr;
 };
 
 Deck::~Deck(){

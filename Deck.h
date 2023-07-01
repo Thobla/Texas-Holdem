@@ -7,7 +7,9 @@ class Deck {
 	public:
 		Card *deck[52];
 		
+		int assignedCards;
 		Deck();
+		Card** assignCard();
 
 
 		~Deck();
