@@ -2,19 +2,14 @@
 #include <iostream>
 #include <string>
 
-Card::Card(int val) {
+//enum Suit {hearts, diamonds, spades, clubs};
+Card::Card(int val, Suit suit) {
     value = val;
-}
+    this->suit = suit;
+
+};
 
 Card::~Card(){
-}
-
-Clubs::Clubs(int val) : Card(val) {}
-
-Diamonds::Diamonds(int val) : Card(val) {}
-
-Spades::Spades(int val) : Card(val) {}
-
-Hearts::Hearts(int val) : Card(val) {}
+};
 
 

@@ -1,33 +1,13 @@
 #ifndef CARDS_H
 #define CARDS_H
 
+enum Suit {hearts, diamonds, spades, clubs};
 class Card{
     public:
         int value;
+	Suit suit;
         
-        Card(int val);
+        Card(int val, Suit suit);
 	~Card();
-};
-
-class Clubs : public Card{
-    public:
-        Clubs(int val);
-
-};
-
-class Diamonds : public Card{
-    public:
-        Diamonds(int val);
-
-};
-
-class Spades : public Card{
-    public:
-        Spades(int val);
-};
-
-class Hearts : public Card{
-    public:
-        Hearts(int val);
 };
 #endif

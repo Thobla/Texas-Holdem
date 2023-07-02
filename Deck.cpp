@@ -9,13 +9,13 @@ Card *deck[52];
 Deck::Deck(){
 	int x = 0;
 	for(int i = 2; i <= 14; i++){
-		deck[x] = new Hearts(i);
+		deck[x] = new Card(i, hearts);
 		x++;	
-		deck[x] = new Diamonds(i);
+		deck[x] = new Card(i, diamonds);
 		x++;
-		deck[x] = new Clubs(i);
+		deck[x] = new Card(i, clubs);
 		x++;
-		deck[x] = new Spades(i);
+		deck[x] = new Card(i, spades);
 		x++;
 	};
 
