@@ -21,11 +21,16 @@ Deck::Deck(){
 
 
 };
+
 Card** Deck::assignCard(){
 	Card** ptr = &deck[assignedCards];
 	assignedCards += 1;
 	return ptr;
 };
+
+
+
+
 
 Deck::~Deck(){
   for (auto x : Deck::deck){
