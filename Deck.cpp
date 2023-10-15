@@ -4,9 +4,8 @@
 #include <iostream>
 
 
-int assignedCards = 0;
-Card *deck[52];
-Deck::Deck(){
+const Card *deck[52];
+Deck::Deck(): assignedCards(0){
 	int x = 0;
 	for(int i = 2; i <= 14; i++){
 		deck[x] = new Card(i, hearts);

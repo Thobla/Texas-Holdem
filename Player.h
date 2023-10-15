@@ -7,14 +7,13 @@
 
 class Player{
 	private:
-		std::string name;
+		const std::string name;
 		int sjettonger; 
 		Card **hand[2]; 
     public:
 		Player(std::string name, int sjettonger, Deck& deck);
 
         std::string getName() const {return name;}
-        void setName(std::string name) {this->name = name;}
 
         int getSjettonger() const {return sjettonger;}
         void setSjettonger(int sjettonger) {this->sjettonger = sjettonger;}

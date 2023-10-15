@@ -30,14 +30,16 @@ int main()
 
     std::shuffle(std::begin(myDeck.deck), std::end(myDeck.deck), std::mt19937{std::random_device{}()});
 
+
     std::cout << "shuffle" << "\n";
     std::cout << "deck[0]: " << myDeck.deck[0]->getValue() << "\n";
     std::cout << "p1, card1->value: " <<(p1.getHand1())->getValue() << "\n";
     std::cout << "p1, card2->value: " <<(p1.getHand2())->getValue() << "\n";
 
 
-    std::cout << "table card-values: " << (table.getCardAt(0))->getValue() << (table.getCardAt(1))->getValue() << (table.getCardAt(2))->getValue()
-<< (table.getCardAt(3))->getValue() << (table.getCardAt(4))->getValue() << "\n";
+    std::cout << "table card-values: " << (table.getCardAt(0))->getValue() << " " << (table.getCardAt(1))->getValue() << " " << (table.getCardAt(2))->getValue()
+<< " " << (table.getCardAt(3))->getValue() << " " << (table.getCardAt(4))->getValue() << " " << "\n";
 
-    std::cout << "deck card 0,1,2,3 and 4 - values " << myDeck.deck[0] -> getValue() <<myDeck.deck[1]-> getValue() <<myDeck.deck[2]-> getValue() <<myDeck.deck[3] -> getValue() <<myDeck.deck[4]-> getValue() << "\n";
+    std::cout << "deck card 0,1,2,3 and 4 - values " << myDeck.deck[0] -> getValue() << " " << myDeck.deck[1]-> getValue() << " " << myDeck.deck[2]-> getValue() << " " << myDeck.deck[3] -> getValue() << " " << myDeck.deck[4]-> getValue() << " " << "\n";
+    std::cout << "deck card 5, 6, 7, 8 - values " << myDeck.deck[5] -> getValue() << " " << myDeck.deck[6] -> getValue() << " " << myDeck.deck[7] -> getValue() << " " << myDeck.deck[8] -> getValue() << " " << myDeck.deck[9] -> getValue() << "\n";
 }
