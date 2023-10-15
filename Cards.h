@@ -4,10 +4,16 @@
 enum Suit {hearts, diamonds, spades, clubs};
 class Card{
     public:
-        int value;
-	Suit suit;
+        Card(int value, Suit suit);
+
+        int getValue() const {return value;}
+        Suit getSuit() const {return suit;}
+
+	    ~Card();
+
+    private:
+        const int value;
+	    const Suit suit;
         
-        Card(int val, Suit suit);
-	~Card();
 };
 #endif

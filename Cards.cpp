@@ -2,10 +2,9 @@
 #include <iostream>
 #include <string>
 
-Card::Card(int val, Suit suit) {
-    value = val;
-    this->suit = suit;
-
+Card::Card(int value, Suit suit):
+value(value), suit(suit)
+{
 };
 
 Card::~Card(){
