@@ -21,7 +21,7 @@ Deck::Deck(): assignedCards(0){
 
 };
 
-Card** Deck::assignCard(){
+Card** Deck::assignCard(){ //returns a pointer to the next available card in the deck
 	Card** ptr = &deck[assignedCards];
 	assignedCards += 1;
 	return ptr;

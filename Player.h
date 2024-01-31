@@ -9,8 +9,8 @@ class Player{
 	private:
 		const std::string name;
 		int sjettonger; 
-		Card **hand[2]; 
     public:
+		Card **hand[2]; 
 		Player(std::string name, int sjettonger, Deck& deck);
 
         std::string getName() const {return name;}

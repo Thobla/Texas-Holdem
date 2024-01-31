@@ -14,7 +14,6 @@ class Table{
             return nullptr;
         }
 
-    private: 
 		Card **table[5];
 };
 
